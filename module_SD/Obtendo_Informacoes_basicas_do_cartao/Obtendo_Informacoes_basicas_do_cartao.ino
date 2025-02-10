@@ -1,9 +1,3 @@
-/*
-Exemplo para obter algumas informações do cartão micro SD e exibir na serial.
-
-www.bitabittecnologia.com.br
-*/
-
 #include <SPI.h>
 #include <SD.h>
 
