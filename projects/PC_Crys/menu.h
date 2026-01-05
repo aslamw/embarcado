@@ -6,9 +6,11 @@
 
 const char* menu_list[] = {
   "games",
-  "test continuidade",
+  "test de carga",
   "modulos",
-  "servidor"
+  "servidor",
+  "comunicacao",
+  "saves"
 };
 
 #endif

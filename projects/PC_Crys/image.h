@@ -4,6 +4,28 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
+void text(Adafruit_SSD1306& display, char value_text[50]){
+  display.clearDisplay();
+
+  display.setTextSize(1);
+  display.setCursor(52,5);
+  display.println(value_text);
+
+  display.display();
+}
+
+void box_heart(Adafruit_SSD1306& display, int valueBPM){
+  display.clearDisplay();
+
+  display.setTextSize(1);
+  display.setCursor(0,0);
+  display.println("------batimento------");
+  display.print("Batimento: ");
+  display.print(valueBPM);
+  display.print(" BPM");
+  display.display();
+}
+
 void logo(Adafruit_SSD1306& display){
   display.clearDisplay();
   //id: 0 triangle 1 
@@ -24,11 +46,4 @@ void logo(Adafruit_SSD1306& display){
 
 }
 
-void Menu(Adafruit_SSD1306& display){
-  display.clearDisplay();
-
-
-
-}
-
-#endif IMAGE_H
+#endif
